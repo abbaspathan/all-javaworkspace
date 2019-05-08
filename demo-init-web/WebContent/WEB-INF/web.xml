@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<display-name>demo-init-web</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>demoapp</servlet-name>
+		<servlet-class>com.capgemini.demoapp.controller.DemoAppController
+		</servlet-class>
+		<init-param>
+		<param-name>num1</param-name>
+		<param-value>22</param-value>
+	</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>demoapp</servlet-name>
+		<url-pattern>/demo</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
